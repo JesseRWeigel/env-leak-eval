@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*credentials*
+*secret*
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+.next/
+
+# Full model outputs. These contain the reproduced (synthetic) credential values, which is
+# what makes them useful for auditing and also why they stay out of git: the published
+# results carry masked values only. Regenerate them by re-running the harness.
+raw/
+logs_*.txt
